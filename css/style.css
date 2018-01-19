@@ -1,0 +1,266 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	color: #000;
+	background: url("../img/body-bg-1.png");
+	width: 100%;
+	text-align: center;	
+	font: 12px/1 arial, helvetica, sans-serif;
+}
+/* General reset */
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/* General settings */
+.container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 100px;
+}
+.clear{
+	clear: both;
+}
+/*HEADER START*/
+.header{
+	height: 524px;
+	background: url("../img/header-bg-1.png");
+	background-position: center;
+}
+.title:last-child{
+	display: inline-block;
+	float: left;
+	margin: 35px 0 0 7px;
+	padding-left: 10px;
+	font-size: 24px;
+	color: #3c573a;
+	border-bottom: 1px solid;
+	cursor: pointer;
+}
+.title a:last-child{
+	display: inline-block;
+	color: #2e586d;
+	font-size: 12px;
+    margin-left: 160px;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+.title a:last-child:before{
+	display: inline-block;
+	content: "";
+	background-image: url("../img/sprite.png");
+	background-position: -36px -393px; 
+	width: 15px; 
+	height: 15px;
+	vertical-align: -3px;
+	margin-right: 3px;
+}
+.logo{
+	padding-top: 27px;
+}
+.header-nav{
+	float: left;
+	width: 25%;
+	text-align: right;
+	padding-top: 40px;
+	padding-right: 12px;
+}
+.header-nav li{
+    margin-bottom: 10px;
+	display: inline-block;
+	background: url("../img/hd-nav-li-bg.png");
+	padding: 5px;
+	border-radius: 10px;
+}
+.header-nav li a{
+	display: inline-block;
+	font-size: 18px;
+	color: #3c573a;
+	padding: 12px 15px;
+	border-radius: 10px;
+	background: #fff553;
+}
+.header-nav li a:hover,
+.header-nav li:hover{
+	text-decoration: none;
+	background: rgba(226,225,51, .5);
+	transform: scale(1.1);
+}
+.text-box{
+	background: url("../img/text-box.png") no-repeat;
+	height: 280px;
+    width: 75%;
+    color: #3c573a;
+    float: right;
+    text-align: left;
+    padding: 60px 0 0 25px;
+    line-height: 1.2;
+}
+.text-box .title span{
+	font-size: 24px;
+}
+.text-box .title span > span{
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.text-box p{
+	line-height: 1.4;
+	padding-right: 270px;
+	text-align: justify;
+	margin-bottom: 18px;
+}
+.text-box a{
+	font-size: 14px;
+	font-weight: bold;
+	color: #3c573a;
+	text-decoration: underline;
+}
+/*HEADER END*/
+
+/*MAIN START*/
+.main{
+	overflow: hidden;
+	border-bottom: 4px solid #6d9d67;
+}
+.sidebar{
+	float: left;
+	width: 25%;
+	color: #3c573a;
+	text-align: right;
+	padding-right: 12px;
+}
+.sidebar .title span{
+	display: inline-block;
+	font-size: 18px;
+	padding-top: 25px;
+	margin-bottom: 12px;
+}
+.sidebar p{
+	line-height: 1.5;
+}
+.sidebar a{
+	color: #30462f;
+	text-decoration: underline;
+}
+.social-nav li{
+	display: inline-block;
+}
+.social-nav li a{
+	display: inline-block;
+	background-image: url("../img/sprite.png");
+}
+.fb-ic{ 
+	background-position: -0px -357px; 
+	width: 36px; 
+	height: 37px; 
+}
+.m-ic{ 
+	background-position: -36px -357px; 
+	width: 35px; 
+	height: 36px; 
+}
+.tw-ic{ 
+	background-position: -71px -357px; 
+	width: 35px; 
+	height: 37px; 
+}
+.content{
+	width: 75%;
+	color: #3c573a;
+	float: left;
+	text-align: left;
+	margin-bottom: 80px;
+}
+.content-item{
+	margin: 3px 0 0 15px;
+	border-bottom: 1px solid;
+	padding-bottom: 50px;
+}
+.content-item + .content-item{
+	margin-top: 20px;
+}
+.content-item:last-child{
+	border-bottom: none;
+}
+.content-item img{
+	float: left;
+	padding-right: 12px;
+}
+.content-item span{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px 0 5px 0;
+}
+.content-item p{
+	line-height: 1.4;
+	text-align: justify;
+}
+span.date{
+	font-style: italic;
+	font-weight: normal;
+}
+/*MAIN END*/
+
+/*FOOTER START*/
+.footer{
+	height: 94px;
+	background: #fff;
+	padding-top: 18px;
+}
+.copywright{
+	width: 50%;
+	float: left;
+}
+.copywright li{
+	display: inline-block;
+}
+.copywright li a span{
+	font-weight: bold;
+}
+.links{
+	float: right;
+}
+.links li{
+	display: inline-block;
+	text-decoration: underline;
+}
+/*FOOTER END*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*.girl-ic { background-position: -0px -0px; width: 112px; height: 119px; }
+.guys-ic { background-position: -0px -119px; width: 112px; height: 119px; }
+.stereo-ic { background-position: -0px -238px; width: 112px; height: 119px; }
+.fb-ic { background-position: -0px -357px; width: 36px; height: 37px; }
+.m-ic { background-position: -36px -357px; width: 35px; height: 36px; }
+.tw-ic { background-position: -71px -357px; width: 35px; height: 37px; }
+.rss-ic { background-position: -36px -393px; width: 15px; height: 15px; }*/
